@@ -3,6 +3,8 @@
 //import Entity from "entity.js";
 //#endregion
 
+
+let Player = new Entity("kana", "colère");
 //#region INTERFACE
 //rendre invisible ce qu'on veut
 function hide(name)
@@ -148,5 +150,38 @@ function GameOver(type)
             break;
     }
     //afficher le game over
+}
+//#endregion
+
+//#region boost
+function Button(a)
+{
+    //pour les boosts à droite
+    if(Player.money > 0)
+    {
+        switch(a)
+        {
+            case 0 :
+                Player.ADHeals();
+                alert("Votre Vie est régénérée");
+            case 1 :
+                Player.ADMana();
+                alert("Votre Mana est régénérée");
+            case 2 :
+                Player.ADSpeed();
+                alert("Vous gagner un point en vitesse");
+            case 3 :
+                Player.ADStrength();
+                alert("Vous gagner un point en Force");
+            case 4 :
+                Player.ADResistance();
+                alert("Vous gagner un point en Résistance");
+            case 5 :
+                Player.ADIntelligence();
+                alert("Vous gagner un point en intelligence");
+        }
+        Player.RMMoney(1);
+    }
+    
 }
 //#endregion

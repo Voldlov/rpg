@@ -17,10 +17,9 @@ class Entity{
     img1;
     img2;
     img3;
-    constructor(name)
+    constructor(name, classeSetting)
     {
         this.name = name;
-        /*
         this.classe=classeSetting;
         //a personaliser les classes
         //les ennemis ont des classes aléatoires et peuvent avoir des boosts
@@ -108,13 +107,6 @@ class Entity{
                 img3 = "luxure2";
                 break;
         }
-        */
-    }
-    CareHeals(){
-        //se soigner
-    }
-    CareMana(){
-        //récupérer son pouvoir
     }
     Save(){
         //enregistrer la progression avec AJAX
