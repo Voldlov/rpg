@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantaisie noire</title>
+    <link rel="stylesheet" media="" href="style/style.css"></l>
+    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/entity.js"></script>
+    <div id="board" onclick="show('#center')">
+        <p>Nom : <span class="name"></span></p><br>
+        <p class="life">Vie : <span></span></p><br>
+        <p class="magie">Mana : <span></span></p><br>
+        <p class="gold">Argent : <span></span></p><br>
+        <p class="corrupt">Corruption : <span></span></p>
+    </div>
+    <div id="ambre">
+    </div>
+    <div id="pact">
+        <ul>
+            <li><button class="" id="soin" onclick="">Se soigner</button></li>
+            <li><button class="" id="mana" onclick="">Récupérer son mana</button></li>
+            <li><button class="" id="speed+" onclick="">Vitesse</button></li>
+            <li><button class="" id="force+" onclick="">Force</button></li>
+            <li><button class="" id="resistance+" onclick="">Résistance</button></li>
+            <li><button class="" id="brain+" onclick="">Intelligence</button></li>
+        </ul>
+    </div>
+    <div id="center" class="control">
+        <p>Nom : <span class="name"></span></p>
+        <p class="">Classe : <span></span></p>
+        <p class="life">Vie : <span></span></p>
+        <p class="magie">Mana : <span></span></p>
+        <p class="gold">Argent : <span></span></p>
+        <p class="corrupt">Corruption : <span></span></p>
+        <p class="">Défense : <span></span></p>
+        <p class="">Attaque : <span></span></p>
+        <input type="button" class="x" onclick="hide('#center')">
+    </div>
+    <div id="info">
+        <aside id="log"></aside>
+        <article id="action" class="none">
+            <ul>
+                <li><button class="" onclick="">Attaquer</button></li>
+                <li><button class="" onclick="">Se défendre</button></li>
+                <li><button class="" onclick="">Fuir</button></li>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>

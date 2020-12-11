@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="" href="style/style.css"></l>
+</head>
+<body class="start">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/entity.js"></script>
+    <header>
+
+    </header>
+    
+    <div id="home" class="control, center">
+        <input type="button" id="bouton" value="Nouvelle partie" onclick="newGame()"><br>
+        <input type="button" id="bouton" value="Continuer" onclick="oldgame()">
+    </div>
+    <div id="interface" class="center">
+        <input type="button" class="x">
+        <form target="game.html" id="inter">
+            <h2>Entrez votre nom</h2>
+            <input type="text" name="entername" id="entername">
+            <h2>choisissez votre péché</h2>
+            <input type="checkbox" name="avarice" id="avarice">
+            <label for="avarice">avarice</label><br>
+            <input type="checkbox" name="colère" id="colère">
+            <label for="colère">colère</label><br>
+            <input type="checkbox" name="envie" id="envie">
+            <label for="envie">envie</label><br>
+            <input type="checkbox" name="gourmandise" id="gourmandise">
+            <label for="gourmandise">gourmandise</label><br>
+            <input type="checkbox" name="luxure" id="luxure">
+            <label for="luxure">luxure</label><br>
+            <input type="checkbox" name="orgueil" id="orgueil">
+            <label for="orgueil">orgueil</label><br>
+            <input type="checkbox" name="paresse" id="paresse">
+            <label for="paresse">paresse</label><br>
+            <button type="submit" onclick="creatPlayer(), self.location.href='game.html'">Vélider</button>
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

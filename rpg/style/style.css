@@ -1,0 +1,119 @@
+body {
+    background-image: url("../img/monster/colere.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgb(54, 54, 54); /*Couleur de fond*/
+}
+.start{
+    background-image: url("../img/0start.jpg");
+}
+div {
+    background-color: rgba(133, 133, 133, 0.623); /*Couleur de fond*/
+    position: absolute; /**/
+    padding: 10px;
+    color: white;
+    border: solid 5px black;
+}
+button {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:2px;
+	box-shadow:3px 3px 12px #999;
+	background:#fff;
+	font:bold 13px Arial;
+    color:#555;
+    width: 150px;
+    height: 50px;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-top: 20px;
+}
+
+#board {
+    padding: 5px;
+    left: 0px; /*position largeur*/
+    top: 0px; /*Postion hauteur*/
+    height: 350px; /*Hauteur*/
+    width: 20%; /*largeur*/
+    border-bottom-right-radius: 50px;
+}
+#ambre {
+    right: 0px; /*position largeur*/
+    top: 5%; /*Postion hauteur*/
+    height: 15%; /*Hauteur*/
+    width: 125px; /*largeur*/
+    background-image: url("../img/Ambre/see.jpg");
+    background-size: 150px;
+}
+#pact {
+    right: 0px; /*position largeur*/
+    top: 25%; /*Postion hauteur*/
+    height: 50%; /*Hauteur*/
+    width: 20%; /*largeur*/
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    /*display: ;*/
+    text-align: center;
+}
+#info {
+    right: 25%; /*position largeur*/
+    bottom: 0px; /*Postion hauteur*/
+    height: 20%; /*Hauteur*/
+    width: 50%; /*largeur*/
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    text-align: center;
+}
+.x {
+    right: 0px;
+    top: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(100, 3, 3);
+    position: absolute
+}
+#center {
+    left: 20%; /*position largeur*/
+    top: 5%; /*Postion hauteur*/
+    height: 300px; /*Hauteur*/
+    width: 60%; /*largeur*/
+    background-color: black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+#action {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    bottom: 20px;
+}
+#action li {
+    display: inline;
+}
+#interface {
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    
+}
+#home{
+    height: 50%;
+    top: 25%;
+    width: 50%;
+    left: 25%;
+}
+.center{
+    text-align: center;
+}
+#home > input {
+    height: 25%;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
